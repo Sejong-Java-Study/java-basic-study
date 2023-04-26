@@ -17,4 +17,9 @@
 - 제목_이름.md : 공백은 언더바(_)로 구분해주세요.
     - ex) JVM의_작동원리_조태현.md 
 
-
+## 원격저장소 Clone 하기
+1. 새 폴더를 생성한 후, 그 경로에서 git bash 열기
+2. git clone `원격저장소 주소 + .git`
+> git clone 시, origin이라는 이름으로 원격저장소가 자동으로 등록됨.
+3. .gitignore 파일을 생성하여 문서 파일 이외에 커밋되지 않도록 하기.
+4. 문서 파일 생성 후, git add -> git commit -> git push origin main
