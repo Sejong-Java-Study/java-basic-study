@@ -24,3 +24,4 @@
 3. .gitignore 파일을 생성하여 문서 파일 이외에 커밋되지 않도록 해주세요.
 4. 문서 파일 생성 후, git add -> git commit -> git push origin main
 > push에서 오류가 생길 경우, `git pull` 명령어로 로컬 저장소의 내용을 업데이트 해주세요.
+5. 참고 자료 : https://velog.io/@may-verde/%EA%B9%83%ED%97%88%EB%B8%8C%EC%97%90-%EB%A1%9C%EC%BB%AC-%ED%8F%B4%EB%8D%94-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0clone
