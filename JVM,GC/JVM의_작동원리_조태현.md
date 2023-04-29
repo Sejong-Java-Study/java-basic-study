@@ -20,8 +20,30 @@
    - Java 애플리케이션은 오직 JVM하고 상호작용을 하기 때문에 OS에는 독립적이지만, OS에서 실행가능한 JVM이 필요하다. (Java는 JVM 내에서 동작하기 때문에 JVM의 구조를 알아야 할 필요가 있다.)
 
 ## JVM 구조
+- JVM은 Java 응용 프로그램을 실행하기 위한 런타임 엔진 역할을 한다. JVM을 통해 Java 소스코드에 있는 메서드를 실제로 호출하는 것이다. 따라서 자바를 실행하기 위한 최소한의 요구사항을 제공하는 JRE(Java Runtime Environment)안에 JVM이 포함되어 있다.
+![Alt Text](https://scaler.com/topics/images/java-development-kit.webp)
+[JRE와 JVM](https://www.scaler.com/topics/java/how-java-program-works/)
+- 컴파일러를 통해 변환된 .class 파일(바이트 코드 파일)을 JVM에서 실행하면 먼저 바이트 코드를 메모리에 적재하는 작업이 필요하다. 이를 담당하는 것이 **클래스 로더**이다.
+  - 클래스 로더는 크게 세 가지 활동을 담당한다.
+    - Loading
+    - Linking
+    - Initialization
+
+![Alt Text](https://media.geeksforgeeks.org/wp-content/uploads/jvm-3.jpg)
+[JVM 구조](https://www.geeksforgeeks.org/jvm-works-jvm-architecture/)
+### 1. Loading
+- JVM은 바이트 코드를 한줄한줄 해석하면서 바이너리 코드로 변환하여 메소드 영역(Method Area)에 저장한다. 메소드 영역에는 클래스의 이름, 해당 클래스 파일이 다른 클래스, 인터페이스 등과 관련되어 있는지 여부, 변수 및 메서드 정보 등이 저장된다. 
+### 2. Linking
+- 읽어낸 클래스가 올바른 형식으로 구성되어 있는지, 유효한 컴파일러에 의해 생성되어 있는지 여부를 확인한다. **(코드의 유효성을 판단하는 작업은 반드시 필요하기 때문)**
+- 클래스가 필요로 하는 메모리를 할당한다.
+### 3. Initialization
+- 클래스 변수들을 적절한 값으로 초기화 한다.
+
 https://inspirit941.tistory.com/294  
 https://www.scaler.com/topics/java/how-java-program-works/
+
+https://steady-coding.tistory.com/593 : 클래스 로더에 대한 설명
+
 
 
 
