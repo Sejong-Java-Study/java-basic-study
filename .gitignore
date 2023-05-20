@@ -1,2 +1,5 @@
 # for mac users
 .DS_Store
+
+# IntelliJ
+/.idea
